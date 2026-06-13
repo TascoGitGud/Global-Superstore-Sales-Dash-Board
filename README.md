@@ -1,190 +1,219 @@
-# UNIGAP - PORTFOLIO BUILDING MODULE -  PBI TEMPLATE
-
-🔥Use this template as an outline for your Github projects. Make a copy of this readme file and tailor it your own. Happy portfolio-ing and start applying aggressively :"))
-
----
-![E-commerce Website_Analysis](https://github.com/Dorothy-Ho-Vy/Sample-Readme-template/blob/0e47d32968459ec80d7d2666fbf5044ac56894e6/1.png)
-
-Change Icon emoji 🔥🔍📘🚩 to your likings by clicking "Start" + "."
-
-
-# 📊 Your Project Name [ Business question + Domain + Tools ]  
-
- _Example:_
- _Analyze & Discover the User Churnsinsight of Databel – a Telecomproviders| SQL & PowerBI_
- 
-_+ Business question: The core problems/ the core questions that this project solves/ answers -> User Churn Analysis_
-
-_+ Domain: Domain/ Industry that this projects focus on --> a Telecomproviders_
-
-**_📌You need to show that your projects are applicable to real business use cases, for a particular industry, not just "learning projects"_**
+![Power BI](https://img.shields.io/badge/Tool-Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/Language-DAX-217346?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
 
 ---
 
-## 📑 Table of Contents  
-1. [📌 Background & Overview](#-background--overview)  
-2. [📂 Dataset Description & Data Structure](#-dataset-description--data-structure)  
-3. [🧠 Design Thinking Process](#-design-thinking-process)  
-4. [📊 Key Insights & Visualizations](#-key-insights--visualizations)  
+<p align="center">
+  <img src="Images/banner.png" width="100%">
+</p>
+
+# 📊 Global Superstore Sales Performance Dashboard | Power BI
+
+_Help a Senior Manager understand the overall business performance, compare markets, and identify which products to grow or cut — all in one interactive dashboard._
+
+- 🎯 **Business Question:** What is the overall business performance, how are different markets doing, and which products should the company focus on?
+- 🏬 **Domain:** Global Retail / E-commerce (multi-market superstore)
+- 🛠️ **Tools:** Power BI, DAX
+
+👤 Author: Bạch Minh Nam
+📅 Date: YYYY-MM-DD
+
+---
+
+## 📑 Table of Contents
+1. [📌 Background & Overview](#-background--overview)
+2. [📂 Dataset Description & Data Structure](#-dataset-description--data-structure)
+3. [🧠 Design Thinking Process](#-design-thinking-process)
+4. [📊 Key Insights & Visualizations](#-key-insights--visualizations)
 5. [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)
 
 ---
 
-## 📌 Background & Overview  
+## 📌 Background & Overview
 
-### Objective:
-### 📖 What is this project about? 
- 
-- Provide a brief introduction to the project. Define the problem statement/ business question that this project will show and why it is important.
-- Write in bullet point format
+### Objective
 
- _Example:_
+Global Superstore is a company that sells products in many markets across different continents. The company is growing fast and wants to expand into more markets to gain market share.
 
- This project analyzes sales trends and inventory control using SQL and Power BI. The objective is
-✔️ Identify high-demand products and sales trends.  
-✔️ Optimize inventory levels to prevent overstocking or stockouts.  
-✔️ Provide actionable insights through Power BI dashboards.  
+The Senior Manager needs a dashboard to answer 3 main questions:
 
+✔️ **Overall performance:** How is the business doing right now? Is revenue and profit growing?
+✔️ **Market performance:** Which markets are performing well, and which ones need attention?
+✔️ **Product performance:** Which product categories are profitable, and which ones should be prioritized or cut?
 
-**_📌You need to provide the context in a clearcut way_**
+This project uses Power BI to turn raw sales data into a dashboard that helps the Senior Manager make faster, data-driven decisions about where to expand and which products to invest in.
 
-**_📌Keep your language in this part simple and relatable. Ditch the jargon and speak in terms your audience uses every day. Focus on the practical applications and business value. Show them how the insights can directly impact decision-making and drive success_**
+### 👤 Who is this project for?
 
-### 👤 Who is this project for?  
-
-Mention who might benefit from this project 
-
- _Example:_
-
-✔️ Data analysts & business analysts  
-✔️ Supply chain managers & inventory controllers  
-✔️ Decision-makers & stakeholders  
+✔️ Senior Managers & Business Directors — to get a quick, reliable view of company performance
+✔️ Sales & Market teams — to compare performance across regions and plan strategy
+✔️ Product teams — to identify which categories or products drive (or hurt) profit
 
 ---
 
-## 📂 Dataset Description & Data Structure  
+## 📂 Dataset Description & Data Structure
 
-### 📌 Data Source  
-- Source: (Mention where the dataset is obtained from—Kaggle, company database, government sources, etc.)  
-- Size: (Mention the number of rows & columns)  
-- Format: (.csv, .sql, .xlsx, etc.)  
+### 📌 Data Source
+- Source: Global Superstore Sales dataset (loaded via Power Query)
+- Format: Live connection / Power Query
 
-### 📊 Data Structure & Relationships  
+### 📊 Data Structure & Relationships
 
-#### 1️⃣ Table Schema & Data Snapshot 
-Mention how many tables are in the dataset.  Only mention tables that you actually used from the entire dataset. 
-Table 1: Products Table  
+#### 1️⃣ Tables Used
 
-👉🏻 Insert a screenshot of table schema. if table is too long, only show a snapshot of it. Recommend to put it in a toggle format
+The dataset has **3 tables**:
 
- _Example:_
+- **Orders** — the main table, storing all sales transaction details
+- **People** — stores information about the salesperson responsible for each region
+- **Returns** — records which orders were returned
 
-| Column Name | Data Type | Description |  
-|-------------|----------|-------------|  
-| Product_ID  | INT      | Unique identifier for each product |  
-| Name        | TEXT     | Product name |  
-| Category    | TEXT     | Product category |  
-| Price       | FLOAT    | Price per unit |  
+#### 2️⃣ Table Schema
 
+**Table: Orders** (main fact table)
 
-Table 2: Sales Transactions  
+| Field | Type of Column |
+|---|---|
+| Order ID | Dimension |
+| Order Date | Measure |
+| Ship Date | Measure |
+| Ship Mode | Dimension |
+| Customer ID | Dimension |
+| Customer Name | Dimension |
+| Segment | Dimension |
+| City | Dimension |
+| State | Dimension |
+| Country | Dimension |
+| Postal Code | Dimension |
+| Market | Dimension |
+| Region | Dimension |
+| Product ID | Dimension |
+| Category | Dimension |
+| Sub-Category | Dimension |
+| Product Name | Dimension |
+| Sales | Measure |
+| Quantity | Measure |
+| Discount | Measure |
+| Profit | Measure |
+| Shipping Cost | Measure |
+| Order Priority | Dimension |
 
-👉🏻 Insert a screenshot of table schema. if table is too long, only show a snapshot of it. Recommend to put it in a toggle format
+**Table: People**
 
+| Column Name | Description |
+|---|---|
+| Person | Name of the salesperson |
+| Region | Region this person is responsible for |
 
- _Example:_
+**Table: Returns**
 
-| Column Name    | Data Type | Description |  
-|---------------|----------|-------------|  
-| Transaction_ID | INT      | Unique identifier for each sale |  
-| Product_ID     | INT      | Foreign key linking to Products table |  
-| Quantity       | INT      | Number of items sold |  
-| Sale_Date      | DATE     | Date of transaction |  
+| Column Name | Description |
+|---|---|
+| Order ID | Order that was returned |
+| Returned | Yes/No flag |
 
+#### 3️⃣ Data Relationships
 
-**_📌If the table is too big, only capture a part of it that contains key metrics you used in the projects or put the table in toggle_**
+The 3 tables are connected as follows:
 
-<details>
-<summary>Click to toggle</summary>
+- **People → Orders**: One person manages many orders (1-to-many, joined on `Region`)
+- **Orders → Returns**: One order can have one return record (joined on `Order ID`)
 
-This content is hidden by default and will expand/collapse when clicked.
-
-You can add more details here, like code blocks, lists, or images.
-</details>
-
-#### 🥰3️⃣ Data Relationships:  
-👉🏻 Include a screenshot of Data Modeling to visualize relationships.  
+<p align="center">
+  <img src="Images/data_model.png" width="80%">
+</p>
 
 ---
 
-## 🧠 Design Thinking Process  
+## 🧠 Design Thinking Process
 
-Explain the step-by-step approach taken to solve the problem.  
+This project followed the Design Thinking framework across 3 main steps: Empathize, Define Point of View, and Ideate.
 
-👉🏻 Insert a screenshot of the Design Thinking steps (Screenshot your Excel design thinking tables for better presentation).  
+### 1️⃣ Empathize — Understanding the Stakeholder
 
-1️⃣ Empathize  
-2️⃣ Define point of view  
-3️⃣ Ideate  
-4️⃣ Prototype and review  
+| Question | Answer |
+|---|---|
+| **Who views this dashboard?** | Senior Manager |
+| **What problem does it solve?** | The Senior Manager needs an easy-to-trust dashboard to quickly understand global business performance, identify strategic markets and products, and make expansion decisions with low risk. |
+| **When & where is it used?** | Daily for quick checks, weekly/monthly for strategy reviews, and before board meetings, strategy meetings, or budget planning — viewed on laptop, big screen, or tablet |
+| **Why is this analysis needed?** | To make fast, accurate, evidence-based decisions, reduce dependency on manual reports, and lower the risk of expanding into the wrong market |
+| **How do they decide?** | They analyze overall KPIs, spot growth/decline trends, and compare performance across markets to prioritize expansion or adjust product strategy |
+| **Pains** | Hard to make fast decisions because data is complex, unclear, and not action-oriented |
+| **Gains** | Clear insights lead to better decisions and support sustainable growth |
+| **Key Questions to Answer** | • How is the business performing right now?<br>• Which markets are growing or declining?<br>• Which products should be prioritized for investment?<br>• What is causing these changes?<br>• What strategic action should come next? |
 
-**_📌Use Canva/ Powerpoint to change the format of your Design thinking table, making it more visually pleasant_**
+### 2️⃣ Define Point of View — Choosing the Right Angles
+
+| Point of View | Description | Why the stakeholder cares |
+|---|---|---|
+| **Overview** | Track Sales & Profit trends over time (Year/Quarter) | To see if the business is growing or declining, and identify peak/low periods |
+| **Market** | Compare business performance across Markets/Regions | To see where growth is coming from |
+| **Product** | Analyze Sales & Profit by Category/Sub-Category/Product | To find out which categories/products create or destroy profit |
+
+**Northstar Metrics:**
+
+| Northstar 1 | Northstar 2 |
+|---|---|
+| **Revenue (Revenue Growth Rate)** | **Profit Margin** |
+| Formula: `Total Revenue = Σ (AOV × Total Orders) per Market` | Formula: `Global Profit Margin = Total Profit / Total Revenue` |
+| Success when: Revenue grows continuously year over year, and growth comes from multiple Markets/Categories (not just one source) | Success when: Profit Margin is maintained or improved while revenue is growing |
+| Why this metric: Revenue is the #1 goal — executives need to know "is the company growing?" | Why this metric: Profit ensures the growth is healthy and avoids growing revenue while losing efficiency |
+
+### 3️⃣ Ideate — Structuring the Dashboard
+
+| | **Page 1: Overview** | **Page 2: Market** | **Page 3: Product** |
+|---|---|---|---|
+| **Layer 0 (Scorecards)** | Total Sales, Total Profit, Sales YoY%, Profit Margin | Sales, Profit, Profit Margin by Market | Profit & Profit Margin by Category, Top Underperforming Products |
+| **Layer 1 (1-dimension breakdown)** | Sales & Profit trend by Year, Profit Margin trend by Year, Orders & Return Rate trend | Sales by Market, Return Rate by Market | Top Products by Sales, Profit Margin by Category |
+| **Layer 2 (2-dimension breakdown)** | Relationship between Orders ↔ Return Rate | Trend Sales by Market & Year, Total Customers/Orders by Market | Sub-category Profitability Matrix, Sales vs Profit vs Margin by Product |
+
 ---
 
 ## ⚒️ Main Process
 
-**_📌If your project involves SQL as 1st part of data preprocessing, do this part, or else you can skip this part and jump directly into the Visualization part_**
+This project goes directly into Power BI visualization (no separate SQL/Python preprocessing step — data is loaded and transformed using Power Query inside Power BI).
 
-1️⃣ Data Cleaning & Preprocessing 
-2️⃣ Exploratory Data Analysis (EDA)  
-3️⃣ SQL/ Python Analysis 
-
-- In each step, show your Code
-
-- Include query/ code execution screenshots or result samples
-
-- Explain its purpose and its findings
-
-
-4️⃣ Power BI Visualization  (applicable for PBI Projects)
+1️⃣ **Connect & Load Data** — Connect Power BI to the Orders, People, and Returns tables via Power Query
+2️⃣ **Data Modeling** — Build relationships between the 3 tables as shown in the Data Relationships section above
+3️⃣ **DAX Measures** — Create calculated measures such as Total Sales, Total Profit, Profit Margin, Sales YoY%, Profit YoY%, Return Rate, and AOV (Average Order Value)
+4️⃣ **Power BI Visualization** — Build 3 dashboard pages (Overview, Market, Product) based on the Design Thinking structure above
 
 ---
 
-## 📊 Key Insights & Visualizations  
+## 📊 Key Insights & Visualizations
 
-### 🔍 Dashboard Preview  
+### 🔍 Dashboard Preview
 
-#### 1️⃣ Dashboard 1 Preview  
-👉🏻 Insert Power BI dashboard screenshots here  
+#### 1️⃣ Page 1 — Overview Dashboard
 
-📌 Analysis 1:  
-- Observation: _Describe trends, key metrics, and patterns. Any insights from those observation_  
-- Recommendation: _Suggest actions based on insights._  
+👉🏻 _(Insert Power BI screenshot here)_
 
-#### 2️⃣ Dashboard 2 Preview  
-👉🏻 Insert Power BI dashboard screenshots here
+📌 **Analysis 1:**
+- Observation: _(To be added)_
+- Recommendation: _(To be added)_
 
-📌 Analysis 2:   
-- Observation: _Describe trends, key metrics, and patterns. Any insights from those observation_  
-- Recommendation: _Suggest actions based on insights._  
+#### 2️⃣ Page 2 — Market Dashboard
 
-#### 3️⃣ Dashboard 3 Preview  
-👉🏻 Insert Power BI dashboard screenshots here  
+👉🏻 _(Insert Power BI screenshot here)_
 
-📌 Analysis 3:  
-- Observation: _Describe trends, key metrics, and patterns. Any insights from those observation_  
-- Recommendation: _Suggest actions based on insights._  
+📌 **Analysis 2:**
+- Observation: _(To be added)_
+- Recommendation: _(To be added)_
+
+#### 3️⃣ Page 3 — Product Dashboard
+
+👉🏻 _(Insert Power BI screenshot here)_
+
+📌 **Analysis 3:**
+- Observation: _(To be added)_
+- Recommendation: _(To be added)_
 
 ---
 
-## 🔎 Final Conclusion & Recommendations  
+## 🔎 Final Conclusion & Recommendations
 
-👉🏻 Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following:  
+📍 Key Takeaways:
 
-📌 Key Takeaways:  
-✔️ Recommendation 1  
-✔️ Recommendation 2  
-✔️ Recommendation 3
-
-**_📌Remember to summarize the most core insights/ observations you extract from the entire projects. 
- Recap ONLY key actions/ recommendations. DO NOT copy paste everything above_**
+✔️ _(To be added after dashboard analysis)_
+✔️ _(To be added after dashboard analysis)_
+✔️ _(To be added after dashboard analysis)_
