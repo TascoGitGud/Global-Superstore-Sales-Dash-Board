@@ -242,8 +242,16 @@ This project goes directly into Power BI visualization (no separate SQL/Python p
 
 📍 Key Takeaways:
 
-✔️ **Growth looks good, but watch the return rate.** Revenue and profit are both up over 50%, but the return rate has been rising every year. This should be checked soon before it starts to eat into profit.
+## 🔎 Final Conclusion & Recommendations
 
-✔️ **Focus on markets that work, fix the ones that don't.** Canada is small but very profitable - its approach could help other small markets. EMEA, on the other hand, has low margin and high returns, so it should be improved before expanding further.
+📍 Key Takeaways:
 
-✔️ **Pay attention to product profitability, not just sales.** Tables is currently losing money and needs a pricing review. Meanwhile, Paper and Labels are highly profitable but underused - promoting them more could boost overall profit without much extra cost.
+✔️ **Best expansion candidates: Canada & LATAM.** Canada has the highest profit margin (26.62%) but is currently the smallest market - this means there's a lot of room to grow without hurting efficiency. LATAM is the second-best pick: it has solid Revenue growth and a more stable AOV compared to EMEA or Africa. These two markets give the best balance of "low risk + good return" for expansion.
+
+✔️ **Recommended product-market pairing for expansion.** When entering or growing in Canada and LATAM, prioritize high-margin sub-categories like Paper and Labels instead of pushing the same products as APAC/EU. Pairing an efficient market with efficient products gives the best chance of strong margins from day one.
+
+✔️ **Fix EMEA before expanding it further.** EMEA has the lowest profit margin and highest return rate among major markets, with unstable AOV year to year. Expanding here now would just scale up existing problems - it needs an operational fix first, not more investment.
+
+✔️ **Watch the return rate before it affects future growth.** The return rate has been rising every year since 2012. If this isn't addressed, it could slow down profit growth even if revenue keeps increasing - especially as the company expands into new markets.
+
+✔️ **Clean up the product portfolio before scaling.** Tables is currently losing money and should not be part of any expansion plan until its pricing/cost issue is fixed. Meanwhile, Paper and Labels are underused high-margin products that should be the face of any new market push.
