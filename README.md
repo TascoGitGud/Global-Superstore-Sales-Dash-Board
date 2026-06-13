@@ -40,7 +40,9 @@ Global Superstore is a company that sells products in many markets across differ
 The Senior Manager needs a dashboard to answer 3 main questions:
 
 ✔️ **Overall performance:** How is the business doing right now? Is revenue and profit growing?
+
 ✔️ **Market performance:** Which markets are performing well, and which ones need attention?
+
 ✔️ **Product performance:** Which product categories are profitable, and which ones should be prioritized or cut?
 
 This project uses Power BI to turn raw sales data into a dashboard that helps the Senior Manager make faster, data-driven decisions about where to expand and which products to invest in.
@@ -48,7 +50,9 @@ This project uses Power BI to turn raw sales data into a dashboard that helps th
 ### 👤 Who is this project for?
 
 ✔️ Senior Managers & Business Directors — to get a quick, reliable view of company performance
+
 ✔️ Sales & Market teams — to compare performance across regions and plan strategy
+
 ✔️ Product teams — to identify which categories or products drive (or hurt) profit
 
 ---
@@ -175,8 +179,11 @@ This project followed the Design Thinking framework across 3 main steps: Empathi
 This project goes directly into Power BI visualization (no separate SQL/Python preprocessing step — data is loaded and transformed using Power Query inside Power BI).
 
 1️⃣ **Connect & Load Data** — Connect Power BI to the tables via Power Query
+
 2️⃣ **Data Modeling** — Build relationships between the 3 tables as shown in the Data Relationships section above
+
 3️⃣ **DAX Measures** — Create calculated measures such as Total Sales, Total Profit, Profit Margin, Sales YoY%,...
+
 4️⃣ **Power BI Visualization** — Build dashboard based on the Design Thinking structure above
 
 ---
