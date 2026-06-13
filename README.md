@@ -242,10 +242,6 @@ This project goes directly into Power BI visualization (no separate SQL/Python p
 
 📍 Key Takeaways:
 
-## 🔎 Final Conclusion & Recommendations
-
-📍 Key Takeaways:
-
 ✔️ **Best expansion candidates: Canada & LATAM.** Canada has the highest profit margin (26.62%) but is currently the smallest market - this means there's a lot of room to grow without hurting efficiency. LATAM is the second-best pick: it has solid Revenue growth and a more stable AOV compared to EMEA or Africa. These two markets give the best balance of "low risk + good return" for expansion.
 
 ✔️ **Recommended product-market pairing for expansion.** When entering or growing in Canada and LATAM, prioritize high-margin sub-categories like Paper and Labels instead of pushing the same products as APAC/EU. Pairing an efficient market with efficient products gives the best chance of strong margins from day one.
