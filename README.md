@@ -59,7 +59,7 @@ This project uses Power BI to turn raw sales data into a dashboard that helps th
 ## 📂 Dataset Description & Data Structure
 
 ### 📌 Data Source
-- Source: Global Superstore Sales dataset (loaded via Power Query)
+- Source: Global Superstore Sales dataset (loaded via Google BigQuery)
 - Format: Live connection / Power Query
 
 ### 📊 Data Structure & Relationships
@@ -175,7 +175,7 @@ This project followed the Design Thinking framework across 3 main steps: Empathi
 
 ## ⚒️ Main Process
 
-1️⃣ **Connect & Load Data** - Connect Power BI to the tables via Google Big Query
+1️⃣ **Connect & Load Data** - Connect Power BI to the tables via Google BigQuery
 
 2️⃣ **Data Modeling** - Build relationships between the 3 tables as shown in the Data Relationships section above
 
