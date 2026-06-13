@@ -175,9 +175,7 @@ This project followed the Design Thinking framework across 3 main steps: Empathi
 
 ## ⚒️ Main Process
 
-This project goes directly into Power BI visualization (no separate SQL/Python preprocessing step - data is loaded and transformed using Power Query inside Power BI).
-
-1️⃣ **Connect & Load Data** - Connect Power BI to the tables via Power Query
+1️⃣ **Connect & Load Data** - Connect Power BI to the tables via Google Big Query
 
 2️⃣ **Data Modeling** - Build relationships between the 3 tables as shown in the Data Relationships section above
 
