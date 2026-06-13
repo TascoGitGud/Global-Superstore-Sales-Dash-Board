@@ -13,8 +13,8 @@
 _Help a Senior Manager understand the overall business performance, compare markets, and identify which products to grow or cut — all in one interactive dashboard._
 
 - 🎯 **Business Question:** What is the overall business performance, how are different markets doing, and which products should the company focus on?
-- 🏬 **Domain:** Global Retail / E-commerce (multi-market superstore)
-- 🛠️ **Tools:** Power BI, DAX
+- 🏬 **Domain:** Global Retail / E-commerce 
+- 🛠️ **Tools:** Power BI
 
 👤 Author: Bạch Minh Nam
 
@@ -73,31 +73,31 @@ The dataset has **3 tables**:
 
 **Table: Orders** (main fact table)
 
-| Field | Type of Column |
+| Column Name | Description |
 |---|---|
-| Order ID | Dimension |
-| Order Date | Measure |
-| Ship Date | Measure |
-| Ship Mode | Dimension |
-| Customer ID | Dimension |
-| Customer Name | Dimension |
-| Segment | Dimension |
-| City | Dimension |
-| State | Dimension |
-| Country | Dimension |
-| Postal Code | Dimension |
-| Market | Dimension |
-| Region | Dimension |
-| Product ID | Dimension |
-| Category | Dimension |
-| Sub-Category | Dimension |
-| Product Name | Dimension |
-| Sales | Measure |
-| Quantity | Measure |
-| Discount | Measure |
-| Profit | Measure |
-| Shipping Cost | Measure |
-| Order Priority | Dimension |
+| Order ID | Unique ID for each order |
+| Order Date | Date the order was placed |
+| Ship Date | Date the order was shipped |
+| Ship Mode | Shipping method |
+| Customer ID | Unique ID for each customer |
+| Customer Name | Name of the customer |
+| Segment | Customer segment |
+| City | City of the customer |
+| State | State/Province of the customer |
+| Country | Country of the customer |
+| Postal Code | Postal code of the customer's location |
+| Market | Market region |
+| Region | Sub-region within a market |
+| Product ID | Unique ID for each product |
+| Category | High-level product category |
+| Sub-Category | More specific product grouping under a category |
+| Product Name | Name of the product |
+| Sales | Total sales value of the order line |
+| Quantity | Number of units ordered |
+| Discount | Discount rate applied to the order |
+| Profit | Profit earned from the order |
+| Shipping Cost | Cost to ship the order |
+| Order Priority | Priority level of the order  |
 
 **Table: People**
 
@@ -174,10 +174,10 @@ This project followed the Design Thinking framework across 3 main steps: Empathi
 
 This project goes directly into Power BI visualization (no separate SQL/Python preprocessing step — data is loaded and transformed using Power Query inside Power BI).
 
-1️⃣ **Connect & Load Data** — Connect Power BI to the Orders, People, and Returns tables via Power Query
+1️⃣ **Connect & Load Data** — Connect Power BI to the tables via Power Query
 2️⃣ **Data Modeling** — Build relationships between the 3 tables as shown in the Data Relationships section above
-3️⃣ **DAX Measures** — Create calculated measures such as Total Sales, Total Profit, Profit Margin, Sales YoY%, Profit YoY%, Return Rate, and AOV (Average Order Value)
-4️⃣ **Power BI Visualization** — Build 3 dashboard pages (Overview, Market, Product) based on the Design Thinking structure above
+3️⃣ **DAX Measures** — Create calculated measures such as Total Sales, Total Profit, Profit Margin, Sales YoY%,...
+4️⃣ **Power BI Visualization** — Build dashboard based on the Design Thinking structure above
 
 ---
 
