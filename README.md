@@ -1,5 +1,4 @@
 ![Power BI](https://img.shields.io/badge/Tool-Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/Language-DAX-217346?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
 
 ---
