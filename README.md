@@ -17,7 +17,8 @@ _Help a Senior Manager understand the overall business performance, compare mark
 - 🛠️ **Tools:** Power BI, DAX
 
 👤 Author: Bạch Minh Nam
-📅 Date: YYYY-MM-DD
+
+📅 Date: 2025-12-27
 
 ---
 
